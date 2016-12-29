@@ -73,6 +73,7 @@ noremap <Help> i
 noremap <C-Help> i
 noremap <M-Help> i
 noremap <S-Help> i
+inoremap <Help> <nop>
 
 " Show line number by default
 set ruler
