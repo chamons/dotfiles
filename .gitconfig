@@ -1,0 +1,24 @@
+[user]
+	name = Chris Hamons
+	email = chris.hamons@xamarin.com
+[alias]
+	unstage = reset HEAD
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	NukeSubs = submodule foreach git clean -xdf
+	NukeIt = clean -xdf
+[credential]
+	helper = osxkeychain
+[core]
+	editor = vim
+[push]
+	default = simple
+[diff]
+	tool = bc3
+[difftool]
+	prompt = false
+[merge]
+	tool = bc3
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = /usr/local/bin/kdiff3
+	trustExitCode = false
