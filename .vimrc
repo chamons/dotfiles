@@ -4,6 +4,10 @@ set nocompatible
 " , is the key
 let mapleader = ","
 
+" New MBP have broken escape key so get used to something else
+imap jk <Esc>
+imap JK <Esc>
+
 " Let us swap files without saving always
 set hidden
 
