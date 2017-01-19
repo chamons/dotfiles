@@ -122,3 +122,9 @@ set wildignore+=*~,*.swp,*.tmp
 
 " Let me i in the end of a line without shift+a
 set virtualedit=onemore
+
+" Let me be lazy in writing and quitting with shift
+command WQ wq
+command Wq wq
+command W w
+command Q q
