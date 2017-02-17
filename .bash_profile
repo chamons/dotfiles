@@ -23,6 +23,7 @@ alias vim='mvim --remote-tab-silent'
 alias g='git'
 alias lockscreen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 alias gg='git grep'
+alias gst='git status --ignore-submodule'
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
