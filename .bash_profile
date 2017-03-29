@@ -25,6 +25,7 @@ alias lockscreen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/
 alias gg='git grep'
 alias gst='git status --ignore-submodule'
 alias ga='git add -p `git status --ignore-submodule --porcelain | cut -c4-`'
+alias gwhat='git branch --sort=-committerdate | head'
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
