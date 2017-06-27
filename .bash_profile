@@ -18,8 +18,14 @@ function winname {
 
 alias gistcdiff='gist -pcs -t diff'
 alias gistc='gist -pcs'
+
+if ["$SSH_TTY" == ""]; then
 alias v='mvim --remote-tab-silent'
 alias vim='mvim --remote-tab-silent'
+else
+alias v='vim'
+fi
+
 alias g='rg -g=*.cs'
 alias lockscreen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 alias gg='git grep'
