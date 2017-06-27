@@ -19,7 +19,7 @@ function winname {
 alias gistcdiff='gist -pcs -t diff'
 alias gistc='gist -pcs'
 
-if ["$SSH_TTY" == ""]; then
+if [[ -z "$SSH_TTY" ]]; then
 alias v='mvim --remote-tab-silent'
 alias vim='mvim --remote-tab-silent'
 else
