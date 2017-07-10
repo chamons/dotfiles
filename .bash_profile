@@ -16,6 +16,7 @@ function winname {
 	      printf "\e]2;$1\a"
 }
 
+alias mac_version='system_profiler SPSoftwareDataType | grep System | grep Version | cut -d: -f2'
 alias gistcdiff='gist -pcs -t diff'
 alias gistc='gist -pcs'
 
