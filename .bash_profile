@@ -16,7 +16,6 @@ function winname {
 	      printf "\e]2;$1\a"
 }
 
-alias mac_version='system_profiler SPSoftwareDataType | grep System | grep Version | cut -d: -f2'
 alias gistcdiff='gist -pcs -t diff'
 alias gistc='gist -pcs'
 
@@ -35,6 +34,7 @@ alias gdc='git diff --cached'
 alias ga='git add -p `git status --ignore-submodule --porcelain | cut -c4-`'
 alias gwhat='git for-each-ref refs/heads --sort=-committerdate --format="%(color:green) %(align:15) %(committerdate:relative) %(end) %(color:reset) %(align:60)%(refname:short)%(color:red) %(upstream:track)%(end)%(color:blue)%(upstream:short)" | head -n 5'
 alias bigfiles='find . -type f -exec du -ah {} \; | sort -nr | head'
+alias mac_version='sw_vers'
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
