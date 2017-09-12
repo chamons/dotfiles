@@ -45,6 +45,8 @@ d9 ()  {      diff -u /fx/*/Headers/$1 /9x/*/Headers/$1; }
 
 g9 ()  {      grep -s --color $1 /9x/*/Headers/*; }
 
+g9d ()  {      grep -R -s --color $1 /9x/*/; }
+
 v9 ()  {      vim /9x/*/Headers/$1; }
 
 vg ()  { vim `grep -s -l $1 /9x/*/Headers/*`; }
@@ -58,6 +60,8 @@ iosbind () { sharpie bind -s iPhoneOS -o ~/Bindings/${1}/${2} -scope . /9x/${1}.
 d11 ()  {      diff -u /fx/*/Headers/$1 /11x/*/Headers/$1; }
 
 g11 ()  {      grep -s --color $1 /11x/*/Headers/*; }
+
+g11d ()  {      grep -R -s --color $1 /11x/*/; }
 
 v11 ()  {      vim /11x/*/Headers/$1; }
 
