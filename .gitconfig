@@ -6,6 +6,7 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 	NukeSubs = submodule foreach git clean -xdf
 	NukeIt = clean -xdf
+	undo = reset HEAD~
 [credential]
 	helper = osxkeychain
 [core]
