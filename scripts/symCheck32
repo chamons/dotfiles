@@ -1,0 +1,7 @@
+framework="$1"
+shift
+selector="$@"
+echo 64
+nm /System/Library/Frameworks/$framework.framework/$framework | grep $selector
+echo 32
+nm --arch=i386 /System/Library/Frameworks/$framework.framework/$framework | grep $selector
