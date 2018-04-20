@@ -99,6 +99,10 @@ set stal=0
 execute pathogen#infect()
 let g:CommandTFileScanner = "git"
 let g:CommandTSCMDirectories='.git'
+set wildignore+=*.dll,*.pdb,*.cache
+set wildignore+=*/bin/*
+set wildignore+=*/obj/*
+
 
 " Destory All Software shortcuts  
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
