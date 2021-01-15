@@ -7,6 +7,7 @@
 	NukeSubs = submodule foreach git clean -xdf
 	NukeIt = clean -xdf
 	undo = reset HEAD~
+	resurface = reset --soft HEAD~1
 [credential]
 	helper = osxkeychain
 [core]
