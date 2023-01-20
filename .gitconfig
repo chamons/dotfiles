@@ -35,3 +35,9 @@
     conflictstyle = diff3
 [diff]
     colorMoved = default
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[url "https://github.com/rust-lang/crates.io-index"]
+  insteadOf = https://github.com/rust-lang/crates.io-index
+[url "https://github.com/RustSec/advisory-db"]
+  insteadOf = https://github.com/RustSec/advisory-db
